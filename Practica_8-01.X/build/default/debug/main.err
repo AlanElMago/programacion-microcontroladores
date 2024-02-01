@@ -1,4 +1,4 @@
-Warning[205] C:\USERS\ALAN FRANCO\MPLABXPROJECTS\PRACTICA_8-01.X\MAIN.ASM 1 : Found directive in column 1. (LIST)
-Warning[205] C:\USERS\ALAN FRANCO\MPLABXPROJECTS\PRACTICA_8-01.X\MAIN.ASM 5 : Found directive in column 1. (__CONFIG)
-Message[302] C:\USERS\ALAN FRANCO\MPLABXPROJECTS\PRACTICA_8-01.X\MAIN.ASM 19 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] C:\USERS\ALAN FRANCO\MPLABXPROJECTS\PRACTICA_8-01.X\MAIN.ASM 21 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] D:\GIT\PROGRAMACION-MICROCONTROLADORES\PRACTICA_8-01.X\MAIN.ASM 1 : Found directive in column 1. (LIST)
+Warning[205] D:\GIT\PROGRAMACION-MICROCONTROLADORES\PRACTICA_8-01.X\MAIN.ASM 5 : Found directive in column 1. (__CONFIG)
+Message[302] D:\GIT\PROGRAMACION-MICROCONTROLADORES\PRACTICA_8-01.X\MAIN.ASM 16 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\GIT\PROGRAMACION-MICROCONTROLADORES\PRACTICA_8-01.X\MAIN.ASM 18 : Register in operand not in bank 0.  Ensure that bank bits are correct.
