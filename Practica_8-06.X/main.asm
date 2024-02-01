@@ -17,9 +17,8 @@ SETUP				    ; Etiqueta SETUP
     BCF	    STATUS,	RP0	    ; Cambiar al Banco 0
 
 LOOP				    ; Etiqueta LOOP
-    MOVF    PORTD,	0	    ; Leer los pines del puerto D y moverlos al registro W
-    ANDLW   b'01010101'		    ; Fijar bits impares (b7, b5, b3, b1) a "0"
-    MOVWF   PORTB		    ; Mueve W al puerto B
+    SWAPF   PORTD, W		    ; Intercambia los nibbles del byte de PORTD y lo guarda en W
+    MOVWF   PORTB		    ; Mover de W al puerto B
     GOTO    LOOP		    ; Ir a la etiqueta LOOP
     
     END
