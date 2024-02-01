@@ -4,7 +4,7 @@ LIST P=16F877A
 ; Configuracion para PicSimLab
 __CONFIG _FOSC_HS & _WDTE_OFF & _PWRTE_OFF & _BOREN_OFF & _LVP_OFF & _CPD_OFF & _WRT_OFF & _CP_OFF
 
-; Configuracion para Entrenador
+; Configuracion para el entrenador en fisico
 ; __CONFIG _FOSC_XT & _WDTE_OFF & _PWRTE_ON & _BOREN_ON & _LVP_ON & _CPD_OFF & _WRT_OFF & _CP_OFF
     
 CONST EQU b'00001101'		    ; Constante CONST es igual a 13
