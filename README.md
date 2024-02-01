@@ -10,7 +10,7 @@ LIST P=16F877A
 ; Configuracion para PicSimLab
 ; __CONFIG _FOSC_HS & _WDTE_OFF & _PWRTE_OFF & _BOREN_OFF & _LVP_OFF & _CPD_OFF & _WRT_OFF & _CP_OFF
 
-; Configuracion para el entrenador en físico
+; Configuracion para el entrenador en fisico
 ; __CONFIG _FOSC_XT & _WDTE_OFF & _PWRTE_ON & _BOREN_ON & _LVP_ON & _CPD_OFF & _WRT_OFF & _CP_OFF
 ```
 Es importante dejar comentado la configuración para el entrandor en físico y descomentar la configuración para el PicSimLab al momento de subir cambios de código ensamblador. Esto es para que se pueda verificar rápidamente el funcionamiento de los programas utilizando el PicSimLab.
