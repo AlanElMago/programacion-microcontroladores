@@ -1,15 +1,15 @@
-LIST P=16f877A
+LIST P=16F877A
 #include "p16f877a.inc"
 
 ; Configuracion para PicSimLab
 __CONFIG _FOSC_HS & _WDTE_OFF & _PWRTE_OFF & _BOREN_OFF & _LVP_OFF & _CPD_OFF & _WRT_OFF & _CP_OFF
 
-; Configuracion para Entrenador
+; Configuracion para el entrenador en fisico
 ; __CONFIG _FOSC_XT & _WDTE_OFF & _PWRTE_ON & _BOREN_ON & _LVP_ON & _CPD_OFF & _WRT_OFF & _CP_OFF
     
 CONST EQU b'00000101'		    ; Constante CONST es igual a 13
 
-    ORG 0			    ; Modo de programacion absoluta. Indica el inicio del programa
+    ORG 0			    ; Indica el inicio del programa
 
 SETUP				    ; Etiqueta SETUP
     BSF	    STATUS,	RP0	    ; Cambiar al Banco 1
@@ -21,7 +21,7 @@ SETUP				    ; Etiqueta SETUP
 LOOP				    ; Etiqueta LOOP
     RRF	    PORTD,	0	    ; Leer los pines del puerto D, rotar los bits una posicion a la izquierda y guardar el resultado al registro W
     BCF     STATUS,	C	    ; Limpiar el bit de acarreo (C)
-    MOVWF   PORTB		    ; Mover el resultado de la suma (W) al puerto B
+    MOVWF   PORTB		    ; Mover el resultado (W) al puerto B
     GOTO    LOOP		    ; Ir a la etiqueta LOOP
     
     END
