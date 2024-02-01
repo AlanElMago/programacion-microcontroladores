@@ -1,11 +1,11 @@
-MPASM 5.86                          MAIN.ASM   1-31-2024  23:44:15         PAGE  1
+MPASM 5.86                          MAIN.ASM   2-1-2024  9:35:02         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
 Warning[205]: Found directive in column 1. (LIST)
-                      00001 LIST P=16f877A
+                      00001 LIST P=16F877A
                       00002 #include "p16f877a.inc"
                       00001         LIST
                       00002 
@@ -22,12 +22,12 @@ Warning[205]: Found directive in column 1. (LIST)
 Warning[205]: Found directive in column 1. (__CONFIG)
 2007   3F3A           00005 __CONFIG _FOSC_HS & _WDTE_OFF & _PWRTE_OFF & _BOREN_OFF & _LVP_OFF & _CPD_OFF & _WRT_OFF & _CP_OFF
                       00006 
-                      00007 ; Configuracion para Entrenador
+                      00007 ; Configuracion para el entrenador en fisico
                       00008 ; __CONFIG _FOSC_XT & _WDTE_OFF & _PWRTE_ON & _BOREN_ON & _LVP_ON & _CPD_OFF & _WRT_OFF & _CP_OFF
                       00009     
   00000005            00010 CONST EQU b'00000101'               ; Constante CONST es igual a 13
                       00011 
-                      00012     ORG 0                           ; Modo de programacion absoluta. Indica el inicio del programa
+                      00012     ORG 0                           ; Indica el inicio del programa
                       00013 
 0000                  00014 SETUP                               ; Etiqueta SETUP
 0000   1683           00015     BSF     STATUS,     RP0         ; Cambiar al Banco 1
@@ -41,12 +41,12 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0005                  00021 LOOP                                ; Etiqueta LOOP
 0005   0C08           00022     RRF     PORTD,      0           ; Leer los pines del puerto D, rotar los bits una posicion a la izqu
                             ierda y guardar el resultado al registro W
-0006   1003           00023     BCF     STATUS,     C
-0007   0086           00024     MOVWF   PORTB                   ; Mover el resultado de la suma (W) al puerto B
+0006   1003           00023     BCF     STATUS,     C           ; Limpiar el bit de acarreo (C)
+0007   0086           00024     MOVWF   PORTB                   ; Mover el resultado (W) al puerto B
 0008   2???           00025     GOTO    LOOP                    ; Ir a la etiqueta LOOP
                       00026     
 3F3A                  00027     END
-MPASM 5.86                          MAIN.ASM   1-31-2024  23:44:15         PAGE  2
+MPASM 5.86                          MAIN.ASM   2-1-2024  9:35:02         PAGE  2
 
 
 SYMBOL TABLE
@@ -105,7 +105,7 @@ CHS1                              00000004
 CHS2                              00000005
 CIS                               00000003
 CKE                               00000006
-MPASM 5.86                          MAIN.ASM   1-31-2024  23:44:15         PAGE  3
+MPASM 5.86                          MAIN.ASM   2-1-2024  9:35:02         PAGE  3
 
 
 SYMBOL TABLE
@@ -164,7 +164,7 @@ INTEDG                            00000006
 INTF                              00000001
 IRP                               00000007
 LOOP                              00000005
-MPASM 5.86                          MAIN.ASM   1-31-2024  23:44:15         PAGE  4
+MPASM 5.86                          MAIN.ASM   2-1-2024  9:35:02         PAGE  4
 
 
 SYMBOL TABLE
@@ -223,7 +223,7 @@ RA4                               00000004
 RA5                               00000005
 RB0                               00000000
 RB1                               00000001
-MPASM 5.86                          MAIN.ASM   1-31-2024  23:44:15         PAGE  5
+MPASM 5.86                          MAIN.ASM   2-1-2024  9:35:02         PAGE  5
 
 
 SYMBOL TABLE
@@ -282,7 +282,7 @@ SPEN                              00000007
 SREN                              00000005
 SSPADD                            00000093
 SSPBUF                            00000013
-MPASM 5.86                          MAIN.ASM   1-31-2024  23:44:15         PAGE  6
+MPASM 5.86                          MAIN.ASM   2-1-2024  9:35:02         PAGE  6
 
 
 SYMBOL TABLE
@@ -341,7 +341,7 @@ TRISA4                            00000004
 TRISA5                            00000005
 TRISB                             00000086
 TRISB0                            00000000
-MPASM 5.86                          MAIN.ASM   1-31-2024  23:44:15         PAGE  7
+MPASM 5.86                          MAIN.ASM   2-1-2024  9:35:02         PAGE  7
 
 
 SYMBOL TABLE
@@ -400,7 +400,7 @@ _BOREN_ON                         00003FFF
 _CONFIG                           00002007
 _CPD_OFF                          00003FFF
 _CPD_ON                           00003EFF
-MPASM 5.86                          MAIN.ASM   1-31-2024  23:44:15         PAGE  8
+MPASM 5.86                          MAIN.ASM   2-1-2024  9:35:02         PAGE  8
 
 
 SYMBOL TABLE
