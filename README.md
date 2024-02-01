@@ -2,7 +2,7 @@
 Este repositorio es para realizar las actividades de programación para la materia de Programación en Microcontroladores en lenguaje ensamblador MPASM para el PIC16F877A.
 
 # Convenciones
-Para empezara desarrollar un projecto en ensamblador, se necesita poner el siguiente codigo al principio a cada archivo fuente .asm.
+Para empezara desarrollar un projecto en ensamblador, se necesita poner el siguiente codigo al principio a cada archivo fuente .asm:
 
 ```
 LIST P=16f877A
@@ -17,10 +17,10 @@ LIST P=16f877A
 
 Después se necesita declarar las constantes, por ejemplo:
 ```
-CONST EQU b'00001101'		    ; Constante CONST es igual a 13
+CONST EQU b'00001101'       ; Constante CONST es igual a 13
 ```
 
 Y al final el contador de localización:
 ```
-ORG 0			                  ; Indica el inicio del programa
+ORG 0                       ; Indica el inicio del programa
 ```
