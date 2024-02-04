@@ -5,10 +5,10 @@ LIST P=16F877A
 #include "p16f877a.inc"
 
 ; Configuracion para PicSimLab
-__CONFIG _FOSC_HS & _WDTE_OFF & _PWRTE_OFF & _BOREN_OFF & _LVP_OFF & _CPD_OFF & _WRT_OFF & _CP_OFF
+; __CONFIG _FOSC_HS & _WDTE_OFF & _PWRTE_OFF & _BOREN_OFF & _LVP_OFF & _CPD_OFF & _WRT_OFF & _CP_OFF
 
 ; Configuracion para el entrenador en fisico
-; __CONFIG _CP_OFF & _WDT_OFF & _PWRTE_ON & _XT_OSC
+__CONFIG _CP_OFF & _WDT_OFF & _PWRTE_ON & _XT_OSC
 
 DELAY_COUNTER_1 EQU 0x20
 DELAY_COUNTER_2 EQU 0x21
