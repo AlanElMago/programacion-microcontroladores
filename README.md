@@ -4,9 +4,9 @@ Este repositorio es para realizar las actividades de programación para la mater
 # Convenciones
 ## Configuración del editor
 ### Tabulaciones a espacios
-Activen la opcion de convertir tabulaciones a espacios en ```Tools -> Options -> Editor```. Aseguren también que el número de espacios por identación sea igual a 4 y el tamaño de tabulación igual a 8.
+Activen la opcion de convertir tabulaciones a espacios en ```Tools -> Options -> Editor -> Formatting```. Aseguren también que el número de espacios por identación sea igual a 4, el tamaño de tabulación sea igual a 8 y el margen derecho igual a 109. Esto es con el fin de que el código se traslade bien a un documento Word (.docx).
 
-![image](https://github.com/AlanElMago/programacion-microcontroladores/assets/53925066/3ee095cb-4f35-48e4-ac02-7abbe7a19ca0)
+![image](https://github.com/AlanElMago/programacion-microcontroladores/assets/53925066/2ef39e92-de0c-4eab-9db4-e722804c4565)
 
 ## Código Fuente
 ### Encabezado
@@ -21,6 +21,7 @@ LIST P=16F877A
 ; Configuracion para el entrenador en fisico
 ; __CONFIG _FOSC_XT & _WDTE_OFF & _PWRTE_ON & _BOREN_ON & _LVP_OFF & _CPD_OFF & _WRT_OFF & _CP_OFF
 ```
+
 Es importante dejar comentado la configuración para el entrandor en físico y descomentar la configuración para el PicSimLab al momento de subir cambios de código ensamblador. Esto es para que se pueda verificar rápidamente el funcionamiento de los programas utilizando el PicSimLab.
 
 Después se necesita declarar las constantes (si es que se necesita,) por ejemplo:
@@ -32,6 +33,7 @@ Y al final el contador de localización:
 ```
 ORG 0                       ; Indica el inicio del programa
 ```
+
 ### Inicialización
 Es importante limpiar los puertos de entrada y salida al final de la fase de inicialización porque es posible que los puertos del PIC16F877A tengan grabado los bits de un programa que haya corrido anteriormente.
 ```
