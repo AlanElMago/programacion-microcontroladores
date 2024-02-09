@@ -17,15 +17,15 @@ DELAY_COUNTER_3 EQU 0x22
     ORG 0
 
 SETUP
-    BSF	    STATUS,     RP0
+    BSF     STATUS,     RP0
     CLRF    TRISB
-    BCF	    STATUS,     RP0
+    BCF     STATUS,     RP0
     CLRF    PORTB
-    BSF	    PORTB,      0
+    BSF     PORTB,      0
 
 MAIN
     CALL    DELAY_PROC
-    RLF	    PORTB,      1
+    RLF     PORTB,      1
     GOTO    MAIN
 
 DELAY_PROC
