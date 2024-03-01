@@ -25,7 +25,7 @@ DIGITO_E EQU b'01111001'
 DIGITO_F EQU b'01110001'
 
     ORG     0
-    
+
 Inicio
     BSF     STATUS,     RP0
     CLRF    TRISB
@@ -56,55 +56,55 @@ Tabla
     GOTO    ConfiguracionE
     GOTO    ConfiguracionF
 Configuracion0
-    MOVLW   DIGITO_0             ;Configuracion
+    MOVLW   DIGITO_0
     GOTO    ActivaSalida
 Configuracion1
-    MOVLW   DIGITO_1             ;Configuracion
+    MOVLW   DIGITO_1
     GOTO    ActivaSalida
 Configuracion2
-    MOVLW   DIGITO_2             ;Configuracion
+    MOVLW   DIGITO_2
     GOTO    ActivaSalida
 Configuracion3
-    MOVLW   DIGITO_3             ;Configuracion
+    MOVLW   DIGITO_3
     GOTO    ActivaSalida
 Configuracion4
-    MOVLW   DIGITO_4             ;Configuracion
+    MOVLW   DIGITO_4
     GOTO    ActivaSalida
 Configuracion5
-    MOVLW   DIGITO_5             ;Configuracion
+    MOVLW   DIGITO_5
     GOTO    ActivaSalida
 Configuracion6
-    MOVLW   DIGITO_6             ;Configuracion
+    MOVLW   DIGITO_6
     GOTO    ActivaSalida
 Configuracion7
-    MOVLW   DIGITO_7             ;Configuracion
+    MOVLW   DIGITO_7
     GOTO    ActivaSalida
 Configuracion8
-    MOVLW   DIGITO_8             ;Configuracion
+    MOVLW   DIGITO_8
     GOTO    ActivaSalida
 Configuracion9
-    MOVLW   DIGITO_9             ;Configuracion
+    MOVLW   DIGITO_9
     GOTO    ActivaSalida
 ConfiguracionA
-    MOVLW   DIGITO_A             ;Configuracion
+    MOVLW   DIGITO_A
     GOTO    ActivaSalida
 ConfiguracionB
-    MOVLW   DIGITO_B             ;Configuracion
+    MOVLW   DIGITO_B
     GOTO    ActivaSalida
 ConfiguracionC
-    MOVLW   DIGITO_C             ;Configuracion
+    MOVLW   DIGITO_C
     GOTO    ActivaSalida
 ConfiguracionD
-    MOVLW   DIGITO_D             ;Configuracion
+    MOVLW   DIGITO_D
     GOTO    ActivaSalida
 ConfiguracionE
-    MOVLW   DIGITO_E             ;Configuracion
+    MOVLW   DIGITO_E
     GOTO    ActivaSalida
 ConfiguracionF
-    MOVLW   DIGITO_F             ;Configuracion
+    MOVLW   DIGITO_F
     GOTO    ActivaSalida
 ActivaSalida
     MOVWF   PORTB
     GOTO    Main
-    
+
     END
